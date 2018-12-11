@@ -1,0 +1,138 @@
+/* common style */
+*{
+  box-sizing: border-box;
+}
+.clear-fix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*custom style  */
+
+/*logo for small devices  */
+
+.logophone{
+  width: 164px;
+  height: 50px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px auto 0;
+}
+h3 {
+  width: 130px;
+  height: 35px;
+  font-family: 'Muli';
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3e3e3c;
+  margin: 49px auto 0;
+}
+p{
+  width: 320px;
+  height: 240px;
+  font-family: 'Muli';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+  margin: 26px auto 0;
+}
+button{
+  width: 115px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  font-family: 'Muli';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 26px auto 0;
+  display: block;
+
+}
+/*footer logo for small devices  */
+
+.footerlogo_phone{
+  width: 60px;
+  height: 30px;
+  background-image: url(../images/powered-by-omoto-60-x-30.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 123px 20px 15px 0px;
+  float: right;
+}
+/* media query for viewing on small screens */
+
+@media only screen and (max-width: 767px){
+  .comp{
+    display: none;
+    }/*the logo for wide screens is hidden when viewing on small screens*/
+  }
+  /* media query for viewing on wide screens */
+
+  @media only screen and (min-width: 1920px){
+    .phone{
+      display: none;
+      }/*the logo for small screens is hidden when viewing on wide screens*/
+
+      .welcome_screen{
+        width: auto;
+        height: 980px;
+        background: #f5f6fa;
+        padding-top: 240px;
+      }
+      /* container for wide screens */
+      .container{
+        max-width: 620px;
+        height: 530px;
+        margin: 0 auto;
+        box-shadow: 0 22px 29px 0 #a8b7c7;
+        border: 1px solid #a8b7c7;
+        background-color: #ffffff;
+      }
+      /*logo for wide screens  */
+
+      .logocomputer{
+        width: 209px;
+        height: 61px;
+        background-image: url(../images/logo@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 34px auto 0;
+      }
+      h3{
+        margin: 46px auto 0;
+      }
+      p{
+        margin: 10px auto 0;
+      }
+      button{
+        margin: 28px auto 0;
+      }
+      /*footer logo for wide screens  */
+
+      .footerlogo_computer{
+        width: 81px;
+        height: 41px;
+        background-image: url(../images/powered-by-omoto-60-x-30@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        float: right;
+        margin: 30px 412px 30px 1427px;
+      }
+    }
